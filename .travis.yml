@@ -12,6 +12,7 @@ install:
   - travis_retry npm install
 
 script:
+  - cd c4-final-project-starter-code\backend
   - serverless deploy
 
 environments:
