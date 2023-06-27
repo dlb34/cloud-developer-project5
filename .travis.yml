@@ -8,7 +8,7 @@ node_js:
   - "12"
 
 before_install:
-  - cd c4-final-project-starter-code/backend  
+  - cd project-5/backend  
   - npm install -g serverless@3.32.2
   - export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
   - export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
@@ -18,7 +18,7 @@ before_install:
   - serverless config credentials --provider aws --key ${AWS_ACCESS_KEY_ID} --secret ${AWS_SECRET_ACCESS_KEY} --profile serverless
 
 script:
-  - export NODE_OPTIONS=--max_old_space_size=8192
+  - export NODE_OPTIONS=--max_old_space_size=8200
   - serverless deploy --verbose --aws-profile serverless
 
 # environments:

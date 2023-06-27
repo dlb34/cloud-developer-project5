@@ -1,5 +1,5 @@
 // api Id. Added to this file once sls deployed.
-const apiId = 'zbpn366awj'
+const apiId = 'z2dvlptk50'
 export const apiEndpoint = `https://${apiId}.execute-api.us-east-1.amazonaws.com/dev`
 
 export const authConfig = {
