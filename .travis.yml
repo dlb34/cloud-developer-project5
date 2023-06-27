@@ -20,8 +20,3 @@ before_install:
 script:
   - export NODE_OPTIONS=--max_old_space_size=8200
   - serverless deploy --verbose --aws-profile serverless
-
-# environments:
-  # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
-  # - AWS_SECRET_ACCESS_KEY=${AWS_ACCESS_KEY_ID}
-  # - SERVERLESS_ACCESS_KEY=${SERVERLESS_ACCESS_KEY}
