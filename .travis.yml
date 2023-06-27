@@ -9,7 +9,8 @@ node_js:
 
 install:
   - npm install -g serverless@3.32.2
-  - travis_retry npm install
+  - npm update --save
+  - npm audit fix
 
 script:
   - cd c4-final-project-starter-code/backend
