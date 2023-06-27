@@ -8,6 +8,7 @@ node_js:
   - "12"
 
 install:
+  - cd c4-final-project-starter-code/backend  
   - npm install -g serverless@3.32.2
   - npm update --save
   - npm audit fix
