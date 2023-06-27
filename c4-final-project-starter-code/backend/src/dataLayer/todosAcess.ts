@@ -26,7 +26,8 @@ export class TodosAccess {
             KeyConditionExpression: 'userId = :userId',
             ExpressionAttributeValues: {
                 ':userId': userId
-            }
+            },
+            ScanIndexForward: false,
         };
   
         const result = await docClient.query(params).promise();
