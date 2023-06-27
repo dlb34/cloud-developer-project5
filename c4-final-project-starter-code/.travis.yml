@@ -1,4 +1,9 @@
 language: node_js
+
+branches:
+  only:
+    - main
+
 node_js:
   - "12"
 
@@ -10,5 +15,5 @@ script:
   - serverless deploy
 
 environments:
-  - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY}
-  - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS}
+  - AWS_ACCESS_KEY_ID=${ENV_AWS_ACCESS_KEY}
+  - AWS_SECRET_ACCESS_KEY=${ENV_AWS_SECRET_ACCESS}
