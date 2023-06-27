@@ -4,10 +4,10 @@ Hello Udacity Mentor, i have again created the toDo application with a few diffe
 
 # Functionality of the application
 
-This application will allow creating/removing/updating/fetching TODO items. Each TODO item can optionally have an attachment image. Each user only has access to TODO items that he/she has created.
-
-# Ordered by oldest first
-I have implemented ordering so that the oldest creation date always appears first
+Get - Fetches toDos I have implemented ordering so that the oldest creation date always appears first
+Create - creates toDo items
+Update - can update details
+delete - can delete todos.
 
 # I also implemented CI/CD 
 
