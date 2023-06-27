@@ -8,7 +8,7 @@ node_js:
   - "12"
 
 install:
-  - npm install -g serverless
+  - npm install -g serverless@3.32.2
   - travis_retry npm install
 
 script:
